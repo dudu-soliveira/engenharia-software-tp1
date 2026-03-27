@@ -1,22 +1,44 @@
-# Análise crítica a cerca da saúde mental dos estudantes
+# BurnCheck: Saúde Mental e Vida Acadêmica
+
+**Objetivo Central**
+O projeto tem como objetivo investigar a correlação entre o cotidiano acadêmico e a saúde mental dos estudantes. A meta principal é desenvolver uma **aplicação interativa baseada em um questionário** que, alimentada por um modelo preditivo, seja capaz de avaliar previamente o risco de *burnout* de um aluno com base em seus hábitos e rotina.
+
+**Funcionalidades Principais**
+* **Tratamento e Exploração de Dados:** Limpeza da base de dados e realização de uma Análise Exploratória (EDA) para entender o impacto de variáveis como carga horária, sono e integração social nos níveis de estresse e depressão.
+* **Aplicação de Questionário (Interface do Usuário):** Uma interface em que o estudante preenche informações sobre seu cotidiano. O sistema utiliza o modelo de classificação treinado para processar essas respostas e retornar o nível de risco de *burnout* desse estudante.
+* **Dashboard de Visualização Personalizado:** Ao final do questionário, o sistema gera um dashboard dinâmico que permite ao usuário visualizar seus próprios dados em comparação com as médias do dataset (ex: horas de sono vs. média de outros alunos), facilitando a compreensão do seu estado atual.
+* **Feedback de Vulnerabilidade:** A aplicação demonstrará a importância das variáveis, revelando quais fatores específicos da rotina do usuário são os maiores preditores do seu risco mental, incentivando a prevenção e mudanças de hábito.
 
 ## Base de dados
-Student Mental Health and Burnout Dataset: https://www.kaggle.com/datasets/sehaj1104/student-mental-health-and-burnout-dataset
+Student Mental Health and Burnout Dataset: https://www.kaggle.com/datasets/sehaj1104/student-mental-health-and-burnout-datase
 
-## Objetivos e Principais Features
+### 📚 Sobre o Dataset (*Student Mental Health and Burnout*)
 
-O projeto tem objetivo de investigar correlações entre o cotidiano de estudantes e a saúde mental deles. Por meio de uma Análise Exploratória de Dados busca identificar como variáveis críticas, como carga horária, qualidade do sono e integração social, impactam diretamente os índices de estresse e depressão. O objetivo técnico central é o desenvolvimento de um modelo de Machine Learning capaz de prever o risco de burnout de forma precoce, utilizando atributos dos alunos para identificar padrões de vulnerabilidade. Este trabalho busca integrar tecnologia e psicologia para fomentar um ecossistema educacional mais equilibrado. 
-As funcionalidades do trabalho são a limpeza do banco de dados para padronizar as variáveis. Em seguida realizar uma análise exploratória para gerar o dashboard do projeto. A funcionalidade principal será o modelo preditivo, treinado para classificar o risco de burnout baseado nos atributos do estudante. Por fim, o sistema mostrará a importância das variáveis, revelando quais fatores rotineiros são os maiores preditores de vulnerabilidade mental.
-Escolhemos esse tema, pois é muito importante para todos os estudantes cuidarem da saúde mental para conseguir um bom rendimento acâdemico. Além disso, nos últimos anos o número de casos de doenças mentais aumentaram na sociedade, principalmente nos mais jovens, sendo conhecido como o mal do século.
+O **Conjunto de Dados de Saúde Mental e Burnout de Estudantes** (150 mil linhas, 20 atributos) é uma base de dados sintética de larga escala, projetada para analisar e prever os níveis de *burnout* estudantil com base em fatores acadêmicos, psicológicos e de estilo de vida.
+
+### 📊 Atributos do Dataset (*Features*)
+
+O conjunto de dados inclui os seguintes grupos de variáveis:
+
+* **Dados Demográficos:** idade, gênero, curso, ano letivo.
+* **Indicadores Acadêmicos:** média geral (CGPA/CR), frequência (presença), horas de estudo.
+* **Pontuações Psicológicas:** ansiedade, depressão, nível de estresse.
+* **Fatores de Estilo de Vida:** horas de sono, atividade física, tempo de tela.
+* **Indicadores Sociais:** estresse social e financeiro.
+  
+---
+
+* **Variável Alvo (*Target*):** `burnout_level` (nível de esgotamento)
 
 ## Membros da Equipe e Papéis
 
-*   Eduardo de Sousa Oliveira: [Papel (ex: full, backend, frontend)]
-*   Guilherme Bueno de Andrade Motta: [Papel]
-*   Gustavo Cabral Gonçalves: [Papel]
-*   Renato Valente Lisboa: [Ppael]
+*   Eduardo de Sousa Oliveira: Elaboração do questionário e da aplicação web
+*   Guilherme Bueno de Andrade Motta: Criação do dashboard interativo
+*   Gustavo Cabral Gonçalves: Desenvolvimento do modelo preditivo
+*   Renato Lucas Valente Lisboa: Desenvolvimento do modelo praditivo
 
 ## Pilha de Tecnologias
 
 - Python
 - Jupyter Notebook
+- R Studio
